@@ -1,0 +1,53 @@
+$primary-color-1: #ea5353;
+$primary-color-2: #45d3d3;
+$primary-color-3: #fcaf4a;
+$primary-color-4: #549ef2;
+
+///////////////// GREY COLORS
+$color-grey-light: #fafafa;
+$color-grey-dark-1: #a3a5ae;
+$color-grey-dark-2: #4c4e61;
+////////////////////////// MEDIA QUIERIES
+///
+$bp-largest: 68.75em; /// 1100px
+$bp-large: 56.25em; /// 900px
+$bp-medium: 34.38em; // 550px
+$bp-small: 25em; /// 400px
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: $color-grey-light;
+}
+
+.container {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  margin: 5rem 10rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 3.2rem 1rem 2rem 1rem;
+  }
+  /*display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+
+  //background-color: #549ef2;
+}
